@@ -130,22 +130,6 @@ while we also have information about truth-level quantities:
 originate from gluinos and `truth_parent` the particles that are identified as
 "interesting" parent particles (in the case of this signal, the gluinos themselves).
 
-
-## Quark/gluon tagging
-
-In signal events, there are many jets: the ones originating from the gluinos decay, but also extra jets from radiation.
-We are currently working at integrating into the analysis a so called “quark-gluon tagger”,
-an algorithm developed to try to distinguish between jets originating from a quark and jets originating from a gluon.
-This algorithm uses jet substructure variables (even though in this case they are applied to
-jets with R=0.4, and not only to large-R jets).
-This algorithm will help the analysis in two ways:
-* Counting the number of jets tagged as quarks could be a possible extra handle to suppress the multijet background
-* If we can identify which jets in the event come from quarks and not from gluons, we have greater chances of reconstructing the signal
-events properly (i.e. identify which jets come from which gluino, since those quark jets and not gluon jets).
-This way, if a signal exists, we will be able to reconstruct and identify it also in data. 
-
-## Variables for Quark/Gluon Tagging 
-
 ## Event weights 
 When producing histograms, the minimal set of weights to be considered are the Monte Carlo (MC) weight, and the cross-section weight.
 
@@ -167,6 +151,36 @@ But using properly this weight is instead essential to understand **how many eve
 
 Therefore, it is an essential information also to compare the magniture 
 To make a practical example, we can consider the 
+
+
+## Quark/gluon tagging
+
+In signal events, there are many jets: the ones originating from the gluinos decay, but also extra jets from radiation.
+We are currently working at integrating into the analysis a so called “quark-gluon tagger”,
+an algorithm developed to try to distinguish between jets originating from a quark and jets originating from a gluon.
+This algorithm uses jet substructure variables (even though in this case they are applied to
+jets with R=0.4, and not only to large-R jets).
+This algorithm will help the analysis in two ways:
+* Counting the number of jets tagged as quarks could be a possible extra handle to suppress the multijet background
+* If we can identify which jets in the event come from quarks and not from gluons, we have greater chances of reconstructing the signal
+events properly (i.e. identify which jets come from which gluino, since those quark jets and not gluon jets).
+This way, if a signal exists, we will be able to reconstruct and identify it also in data. 
+
+Some information about quark-gluon tagging:
+* [ATLAS 2014 paper](https://arxiv.org/pdf/1405.6583v3.pdf)
+* [ATLAS Note](http://cdsweb.cern.ch/record/2263679/files/ATL-PHYS-PUB-2017-009.pdf) using the number of tracks as discriminant
+
+## Variables for Quark/Gluon Tagging 
+
+The tagger used in this study is a boosted decision tree (BDT, for an introduction to what a BDT is
+see e.g. [here](https://indico.fnal.gov/event/15356/contributions/31377/attachments/19671/24560/DecisionTrees.pdf)).
+It takes as input three jet substructure variabes:
+* The number of tracks. This is stored into the variable `jet_QGTagger_NTracks`
+* The width of the jet. This is stored into the variable `jet_QGTagger_TracksWidth`
+* The two-point energy correlation. This is stored into the variable `jet_QGTagger_TracksC1`
+
+The meaning of the variables is discussed in the [reference](https://arxiv.org/pdf/1405.6583v3.pdf)
+mentioned above. 
 
 ## Example code 
 
