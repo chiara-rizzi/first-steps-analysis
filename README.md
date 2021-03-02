@@ -146,13 +146,7 @@ sample (i.e. the events have been generated un-weighted). In this case, the valu
 to use this weight in your code. When this weight is not needed, you will just pick up the default value of 1, which does not
 change anything in your distributions. 
 
-In the ROOT files, this weight is stored in the variable `normweight`. 
-If you use this weight to build your histograms, your histograms will be normalized to `1 pb^{-1}`. 
-
-![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
-**Question**: If you want to normalize your histograms to e.g. 139 fb^{-1}, 
-by which factor do you need to scale your histograms? 
-
+In the ROOT files, this weight is stored in the variable `mcEventWeight`.
 
 #### Cross-section weight
 
@@ -163,8 +157,12 @@ But using properly this weight is instead essential to understand **how many eve
 Therefore, it is an essential information also to compare how many eventd we expect e.g. for different signals, or for a specific signal and a 
 background process. 
 
-In the ROOT files, this weight is stored in the variable `mcEventWeight`.
+In the ROOT files, this weight is stored in the variable `normweight`. 
+If you use this weight to build your histograms, your histograms will be normalized to `1 pb^{-1}`. 
 
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: If you want to normalize your histograms to e.g. 139 fb^{-1}, 
+by which factor do you need to scale your histograms? 
 
 
 ## Quark/gluon tagging
