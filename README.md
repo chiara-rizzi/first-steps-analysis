@@ -5,7 +5,7 @@ In this repo you can find
 * Information about the ntuples needed to get started with quark-gluon tagging 
 * Description of the basic steps 
 
-## Intruduction about the signal model
+## Signal model
 
 The specific analysis we are going to look at is a search for gluino pair production (decaying through R-parity violating couplings), in all-hadronic final states (i.e. only hadronic jets, no leptons).
 To have an idea of the type of signal we are looking at, you can take a look at the [paper](https://arxiv.org/pdf/1804.03568.pdf) of the previous iteration of the analysis. 
@@ -34,6 +34,15 @@ To open the ROOT files you can do e.g.:
 ```
 root -l GG_rpv_UDS_900.root
 ```
+
+The name of the TTree is `trees_SRRPV_`, so e.g. to check the number of events
+stored in the TTree you can do:
+```
+trees_SRRPV_->GetEntries()
+```
+
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: in the three files, is the number of entries the same? Can you guess why?
 
 
 ## Quark/gluon tagging
