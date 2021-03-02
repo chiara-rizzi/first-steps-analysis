@@ -30,7 +30,7 @@ GG_rpv_UDS_2400.root
 Each file corresponds to a gluino signal (6-jets model) with a different gluino mass.
 For each of these signals we have generated 10000 simulated events, although you
 will notice that the number of events contained in the files is slightly lower
-than that. This is because, in order to be written into this ROOT files, the
+than that. This is because, in order to be written into these ROOT files, the
 events need to pass a first preselection (requiring highly energetic events that
 also fire the trigger that we want -- described later).
 
@@ -139,7 +139,7 @@ When producing histograms, the minimal set of weights to be considered are the M
 
 #### Monte Carlo weight
 
-This event weight is related to how the events are generated (specifically, it's realted to the sampling of the matrix element function).
+This event weight is related to how the events are generated (specifically, it's related to the sampling of the matrix element function).
 To obtain meaningful distributions, you need to weight the events by the MC weight.
 Depending on which generator has been used for each sample, it is possible that this weight takes the value of 1 for all the events in the
 sample (i.e. the events have been generated un-weighted). In this case, the value stored in the ntuples would be 1, so it is still safe
@@ -154,7 +154,9 @@ This number, which is the same for all events belonging to the same sample, is b
 Unlike the MC weight, if you are looking at events that belong to the same physical process and that have been generated with the same settings, you typically would obtain
 distributions with the correct shape also without this weight (since, as mentioned before, it's the same for all the events in the same sample).
 But using properly this weight is instead essential to understand **how many events** we expect form a certain process.
-Therefore, it is an essential information also to compare how many eventd we expect e.g. for different signals, or for a specific signal and a 
+Therefore, it is 
+a piece of essential information 
+also to compare how many events we expect e.g. for different signals, or for a specific signal and a 
 background process. 
 
 In the ROOT files, this weight is stored in the variable `normweight`. 
@@ -168,7 +170,7 @@ by which factor do you need to scale your histograms?
 ## Quark/gluon tagging
 
 In signal events, there are many jets: the ones originating from the gluinos decay, but also extra jets from radiation.
-We are currently working at integrating into the analysis a so called “quark-gluon tagger”,
+We are currently working at integrating into the analysis a so-called “quark-gluon tagger”,
 an algorithm developed to try to distinguish between jets originating from a quark and jets originating from a gluon.
 This algorithm uses jet substructure variables (even though in this case they are applied to
 jets with R=0.4, and not only to large-R jets).
@@ -186,7 +188,7 @@ Some information about quark-gluon tagging:
 
 The tagger used in this study is a boosted decision tree (BDT, for an introduction to what a BDT is
 see e.g. [here](https://indico.fnal.gov/event/15356/contributions/31377/attachments/19671/24560/DecisionTrees.pdf)).
-It takes as input three jet substructure variabes:
+It takes as input three jet substructure variables:
 * The number of tracks. This is stored into the variable `jet_QGTagger_NTracks`
 * The width of the jet. This is stored into the variable `jet_QGTagger_TracksWidth`
 * The two-point energy correlation. This is stored into the variable `jet_QGTagger_TracksC1`
@@ -199,7 +201,7 @@ mentioned above.
 referenced above, would you be able to explain why the number of tracks provides discrimination between jets originating from
 quarks and jets originating from gluons? 
 
-In order to observe differences betwen the jets originating from quarks and the jets originating from gluons,
+In order to observe differences between the jets originating from quarks and the jets originating from gluons,
 we first of all need to be able to plot the two categories separately.
 A clear division into two separate samples is of course possible only in the MC simulated events,
 where we can access the truth information.
@@ -221,13 +223,13 @@ tracks for jets in the two categories
 * Have a legend
 * Have axes names
 
-A skeleton with some instructions that can be helpful to carry out this taks
+A skeleton with some instructions that can be helpful to carry out this task 
 is available [here](shape_comparison/skeleton.py).
 The example is already running and it produces a plot, but it will need to
 be modified in order to complete fully the task (the comments in the
 example indicate where these modifications can be added). 
 
-You can run the exaple with:
+You can run the example with:
 ```
 cd shape_comparison
 python skeleton.py
@@ -235,7 +237,7 @@ python skeleton.py
 
 #### Second task
 
-Following the example of the firs task, you should plot also the 
+Following the example of the first task, you should plot also the 
 distribution of the jet width and of the two-point energy correlation. 
 
 
