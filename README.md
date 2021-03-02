@@ -13,6 +13,15 @@ If you look at Figure 1 in the paper, you can see a diagram of the two signal mo
 In the first one (which I’ll refer to as “6-jets signal”), each gluino decays directly into three quarks. In the second one (10-jets signal), the gluino decays into two quarks and an intermediate neutralino, which in turn decays into three quarks. 
 For the moment, we are focusing on the first signal. 
 
+## Getting the ntuples
+
+At [this link](https://cernbox.cern.ch/index.php/s/ZeihGpj2O8v1ZVa) (password protected, get in touch for the password) you can find three ROOT files that you can download (total size: 38 M):
+```
+GG_rpv_UDS_900.root
+GG_rpv_UDS_1600.root
+GG_rpv_UDS_2400.root
+```
+
 ## Quark/gluon tagging
 
 In signal events, there are many jets: the ones originating from the gluinos decay, but also extra jets from radiation.
