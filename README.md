@@ -5,6 +5,14 @@ In this repo you can find
 * Information about the ntuples needed to get started with quark-gluon tagging 
 * Description of the basic steps 
 
+## Intruduction about the signal model
+
+The specific analysis we are going to look at is a search for gluino pair production (decaying through R-parity violating couplings), in all-hadronic final states (i.e. only hadronic jets, no leptons).
+To have an idea of the type of signal we are looking at, you can take a look at the [paper](https://arxiv.org/pdf/1804.03568.pdf) of the previous iteration of the analysis. 
+If you look at Figure 1 in the paper, you can see a diagram of the two signal models we are looking at.
+In the first one (which I’ll refer to as “6-jets signal”), each gluino decays directly into three quarks. In the second one (10-jets signal), the gluino decays into two quarks and an intermediate neutralino, which in turn decays into three quarks. 
+For the moment, we are focusing on the first signal. 
+
 ## Variables for Quark/Gluon Tagging 
 
 ## Event weights 
