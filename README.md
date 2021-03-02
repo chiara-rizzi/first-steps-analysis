@@ -9,9 +9,9 @@ In this repo you can find
 
 ## Event weights 
 When producing histograms, the minimal set of weights to be considered are:
-the MC weight 
-This event is related to how the events are generated. 
-The cross section weight. This number, which is the same for all events belonging to the same sample, is basically the ratio between the number of simulated MC events and the number of events that we expect to have in a certain amount of collected data, based on the cross section of the specific process. 
+* the MC weight. This event is related to how the events are generated. 
+* The cross section weight. This number, which is the same for all events belonging to the same sample, is basically the ratio between the number of simulated MC events and the number of events that we expect to have in a certain amount of collected data, based on the cross section of the specific process.
+To make a practical example, we can consider the 
 
 ## Example code 
 
