@@ -13,14 +13,28 @@ If you look at Figure 1 in the paper, you can see a diagram of the two signal mo
 In the first one (which I’ll refer to as “6-jets signal”), each gluino decays directly into three quarks. In the second one (10-jets signal), the gluino decays into two quarks and an intermediate neutralino, which in turn decays into three quarks. 
 For the moment, we are focusing on the first signal. 
 
-## Getting the ntuples
+## Signal ntuples
 
-At [this link](https://cernbox.cern.ch/index.php/s/ZeihGpj2O8v1ZVa) (password protected, get in touch for the password) you can find three ROOT files that you can download (total size: 38 M):
+At [this link](https://cernbox.cern.ch/index.php/s/ZeihGpj2O8v1ZVa)
+(password protected, get in touch for the password)
+you can find three ROOT files that you can download (total size: 38 M):
 ```
 GG_rpv_UDS_900.root
 GG_rpv_UDS_1600.root
 GG_rpv_UDS_2400.root
 ```
+Each file corresponds to a gluino signal (6-jets model) with a different gluino mass.
+For each of these signals we have generated 10000 simulated events, although you
+will notice that the number of events contained in the files is slightly lower
+than that. This is because, in order to be written into this ROOT files, the
+events need to pass a first preselection (requiring highly energetic events that
+also fire the trigger that we want -- described later).
+
+To open the ROOT files you can do e.g.:
+```
+root -l GG_rpv_UDS_900.root
+```
+
 
 ## Quark/gluon tagging
 
