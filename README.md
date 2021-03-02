@@ -54,12 +54,10 @@ their value for the first event:
 
 <details>
   <summary>Click to expand the list of branches!</summary>
-  ```javascript
-    function whatIsLove() {
-      console.log('Baby Don't hurt me. Don't hurt me');
-      return 'No more';
-    }
-  ```
+
+```
+test
+```
 </details>
 
 ## Quark/gluon tagging
