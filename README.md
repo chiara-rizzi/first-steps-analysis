@@ -13,6 +13,19 @@ If you look at Figure 1 in the paper, you can see a diagram of the two signal mo
 In the first one (which I’ll refer to as “6-jets signal”), each gluino decays directly into three quarks. In the second one (10-jets signal), the gluino decays into two quarks and an intermediate neutralino, which in turn decays into three quarks. 
 For the moment, we are focusing on the first signal. 
 
+## Quark/gluon tagging
+
+In signal events, there are many jets: the ones originating from the gluinos decay, but also extra jets from radiation.
+We are currently working at integrating into the analysis a so called “quark-gluon tagger”,
+an algorithm developed to try to distinguish between jets originating from a quark and jets originating from a gluon.
+This algorithm uses jet substructure variables (even though in this case they are applied to
+jets with R=0.4, and not only to large-R jets).
+This algorithm will help the analysis in two ways:
+* Counting the number of jets tagged as quarks could be a possible extra handle to suppress the multijet background
+* If we can identify which jets in the event come from quarks and not from gluons, we have greater chances of reconstructing the signal
+events properly (i.e. identify which jets come from which gluino, since those quark jets and not gluon jets).
+This way, if a signal exists, we will be able to reconstruct and identify it also in data. 
+
 ## Variables for Quark/Gluon Tagging 
 
 ## Event weights 
@@ -21,7 +34,11 @@ When producing histograms, the minimal set of weights to be considered are the M
 #### Monte Carlo weight
 
 This event weight is related to how the events are generated (specifically, it's realted to the sampling of the matrix element function).
-To obtain meaningful distributions, you need to weight the events by the 
+To obtain meaningful distributions, you need to weight the events by the MC weight.
+Depending on which generator has been used for each sample, it is possible that this weight takes the value of 1 for all the events in the
+sample (i.e. the events have been generated un-weighted). In this case, the value stored in the ntuples would be 1, so it is still safe
+to use this weight in your code. When this weight is not needed, you will just pick up the default value of 1, which does not
+change anything in your distributions. 
 
 #### Cross-section weight
 
