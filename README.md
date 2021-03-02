@@ -199,6 +199,15 @@ mentioned above.
 referenced above, would you be able to explain why the number of tracks provides discrimination between jets originating from
 quarks and jets originating from gluons? 
 
+In order to observe differences betwen the jets originating from quarks and the jets originating from gluons,
+we first of all need to be able to plot the two categories separately.
+A clear division into two separate samples is of course possible only in the MC simulated events,
+where we can access the truth information.
+The variable `jet_PartonTruthLabelID` stores the truth category to which the jet belongs.
+In particular, the following values are of interest for this study:
+* `jet_PartonTruthLabelID < 5`: the jet originates from a light quark
+* `jet_PartonTruthLabelID = 21`: the jet originates from a gluon 
+
 ## Example code 
 
 ## Tasks
