@@ -2,8 +2,12 @@
 Instructions for the first steps needed to produce studies with the ntuples produced with FactoryTools
 
 In this repo you can find 
+* Introduction about the signal model
 * Information about the ntuples needed to get started with quark-gluon tagging 
 * Description of the basic steps 
+
+The questions marked with the grern square (![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+))
+are meant to test your understanding while you read. 
 
 ## Signal model
 
@@ -144,8 +148,11 @@ change anything in your distributions.
 
 In the ROOT files, this weight is stored in the variable `normweight`. 
 If you use this weight to build your histograms, your histograms will be normalized to `1 pb^{-1}`. 
-Therefore, if you want to normalize your histograms to e.g. 139 fb^{-1}, you will need to further 
-multiply by 139000. 
+
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: If you want to normalize your histograms to e.g. 139 fb^{-1}, 
+by which factor do you need to scale your histograms? 
+
 
 #### Cross-section weight
 
