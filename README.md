@@ -208,7 +208,22 @@ In particular, the following values are of interest for this study:
 * `jet_PartonTruthLabelID < 5`: the jet originates from a light quark
 * `jet_PartonTruthLabelID = 21`: the jet originates from a gluon 
 
+## Tasks
+
+#### First task 
+
+Plot the distribution of the number of tracks in jets originating from quarks and in jets originating from gluons.
+The plot should: 
+* Show two histograms (with different colors) corresponding to the distribution of the number of
+tracks for jets in the two categories
+* Be normalized to 139 fb^{-1}
+* Have a legend
+* Have axes names
+
+#### Second task
+
+Following the example of the firs task, you should plot also the 
+distribution of the jet width and of the two-point energy correlation. 
+
 ## Example code 
 
-## Tasks
-Plot the distribution of the number of 
