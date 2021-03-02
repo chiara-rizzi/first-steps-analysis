@@ -235,6 +235,9 @@ cd shape_comparison
 python skeleton.py
 ```
 
+You can copy the skeleton into a new file, modify it, and
+add it to this repository. 
+
 #### Second task
 
 Following the example of the first task, you should plot also the 
