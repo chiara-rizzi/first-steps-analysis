@@ -124,7 +124,7 @@ The vectorial branches contain quantities related to objects in the event.
 For example `jet_pt` contains the transverse momentum of the jets in the event;
 the first position in the vector contains the pT of the leading jet, the second
 position the pT of the sub=leading jet, and so on.
-The variables that start with `jet_` are related to the reco-level jets,
+The variables that start with `jet_` are related to the reco-level jets (R=0.4 PFlow jets),
 while we also have information about truth-level quantities:
 `truth_jet` are the truth-level jets, `truth_QuarkFromGluino` the quarks which
 originate from gluinos and `truth_parent` the particles that are identified as
@@ -142,15 +142,22 @@ sample (i.e. the events have been generated un-weighted). In this case, the valu
 to use this weight in your code. When this weight is not needed, you will just pick up the default value of 1, which does not
 change anything in your distributions. 
 
+In the ROOT files, this weight is stored in the variable `normweight`. 
+If you use this weight to build your histograms, your histograms will be normalized to `1 pb^{-1}`. 
+Therefore, if you want to normalize your histograms to e.g. 139 fb^{-1}, you will need to further 
+multiply by 139000. 
+
 #### Cross-section weight
 
 This number, which is the same for all events belonging to the same sample, is basically the ratio between the number of simulated MC events and the number of events that we expect to have in a certain amount of collected data, based on the cross section of the specific process.
 Unlike the MC weight, if you are looking at events that belong to the same physical process and that have been generated with the same settings, you typically would obtain
 distributions with the correct shape also without this weight (since, as mentioned before, it's the same for all the events in the same sample).
 But using properly this weight is instead essential to understand **how many events** we expect form a certain process.
+Therefore, it is an essential information also to compare how many eventd we expect e.g. for different signals, or for a specific signal and a 
+background process. 
 
-Therefore, it is an essential information also to compare the magniture 
-To make a practical example, we can consider the 
+In the ROOT files, this weight is stored in the variable `mcEventWeight`.
+
 
 
 ## Quark/gluon tagging
