@@ -100,7 +100,7 @@ their value in the first event:
  truth_QuarkFromGluino_barcode = (vector<int>*)0x1be1ce0
  truth_QuarkFromGluino_charge = (vector<double>*)0x1dc5920
  truth_QuarkFromGluino_e = (vector<double>*)0xb0ca40
- truth_QuarkFromGluino_eta = (vector<double>*)0x1c1af50
+truth_QuarkFromGluino_eta = (vector<double>*)0x1c1af50
  truth_QuarkFromGluino_pdgID = (vector<int>*)0x1d92d50
  truth_QuarkFromGluino_phi = (vector<double>*)0x1be64c0
  truth_QuarkFromGluino_pt = (vector<double>*)0x15ccae0
@@ -212,7 +212,8 @@ In particular, the following values are of interest for this study:
 
 #### First task 
 
-Plot the distribution of the number of tracks in jets originating from quarks and in jets originating from gluons.
+Plot the distribution of the number of tracks in jets originating from quarks and in jets originating from gluons,
+looking at the jets from the signal with m(gluino) = 1600 GeV.
 The plot should: 
 * Show two histograms (with different colors) corresponding to the distribution of the number of
 tracks for jets in the two categories
@@ -220,10 +221,21 @@ tracks for jets in the two categories
 * Have a legend
 * Have axes names
 
+A skeleton with some instructions that can be helpful to carry out this taks
+is available [here](shape_comparison/skeleton.py).
+The example is already running and it produces a plot, but it will need to
+be modified in order to complete fully the task (the comments in the
+example indicate where these modifications can be added). 
+
+You can run the exaple with:
+```
+cd shape_comparison
+python skeleton.py
+```
+
 #### Second task
 
 Following the example of the firs task, you should plot also the 
 distribution of the jet width and of the two-point energy correlation. 
 
-## Example code 
 
