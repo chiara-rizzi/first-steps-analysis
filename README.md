@@ -54,7 +54,7 @@ their value for the first event:
 
 <details>
   <summary>Click to expand the list of branches!</summary>
-```
+  ```
  NPV             = 20
  TriggerDecisions = (vector<int>*)0x15ed400
  actualInteractionsPerCrossing = 46.5
@@ -112,7 +112,7 @@ their value for the first event:
  truth_parent_phi = (vector<double>*)0x1d7e0d0
  truth_parent_pt = (vector<double>*)0x1d29c20
  normweight      = 0.000267946
-```     
+ ```     
 </details>
 
 ## Quark/gluon tagging
