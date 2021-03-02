@@ -194,6 +194,11 @@ It takes as input three jet substructure variabes:
 The meaning of the variables is discussed in the [reference](https://arxiv.org/pdf/1405.6583v3.pdf)
 mentioned above. 
 
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: after reading the introduction of [ATLAS Note](http://cdsweb.cern.ch/record/2263679/files/ATL-PHYS-PUB-2017-009.pdf)
+referenced above, would you be able to explain why the number of tracks provides discrimination between jets originating from
+quarks and jets originating from gluons? 
+
 ## Example code 
 
 ## Tasks
