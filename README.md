@@ -50,7 +50,7 @@ trees_SRRPV_->Show(1)
 ```
 
 This will display the list of branches and
-their value for the first event:
+their value in the first event:
 
 <details>
   <summary>Click to expand the list of branches!</summary>
@@ -115,6 +115,21 @@ their value for the first event:
  normweight      = 0.000267946
 ```
 </details>
+
+In general we can divide the branches into the ones that contain a single value
+(e.g. `eventNumber`, `mcEventWeight`, `normweight`,...) and the ones that are
+vectors and therefore contain multiple values (e.g. `jet_pt`, `truth_QuarkFromGluino_pt`,
+`truth_jet_pt`,...).
+The vectorial branches contain quantities related to objects in the event.
+For example `jet_pt` contains the transverse momentum of the jets in the event;
+the first position in the vector contains the pT of the leading jet, the second
+position the pT of the sub=leading jet, and so on.
+The variables that start with `jet_` are related to the reco-level jets,
+while we also have information about truth-level quantities:
+`truth_jet` are the truth-level jets, `truth_QuarkFromGluino` the quarks which
+originate from gluinos and `truth_parent` the particles that are identified as
+"interesting" parent particles (in the case of this signal, the gluinos themselves).
+
 
 ## Quark/gluon tagging
 
