@@ -1,10 +1,10 @@
 # First steps in the analysis
-Instructions for the first steps needed to produce studies with the ntuples produced with FactoryTools
+Instructions for the first studies with the ntuples for the gluino RPV analysis. 
 
 In this repo you can find 
 * Introduction about the signal model
 * Information about the ntuples needed to get started with quark-gluon tagging 
-* Description of the basic steps 
+* Description of the tasks and examples
 
 The questions marked with the grern square (![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+))
 are meant to test your understanding while you read. 
