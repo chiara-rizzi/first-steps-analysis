@@ -1,7 +1,3 @@
-markdown: kramdown
-kramdown:
-  parse_block_html: true
-  
 # First steps in the analysis
 Instructions for the first studies with the ntuples for the gluino RPV multijet analysis. 
 
