@@ -224,7 +224,7 @@ tracks for jets in the two categories
 * Have axes names
 
 A skeleton with some instructions that can be helpful to carry out this task 
-is available [here](shape_comparison/skeleton.py).
+is available in [shape_comparison/skeleton.py](https://github.com/chiara-rizzi/first-steps-analysis/blob/main/shape_comparison/skeleton.py). 
 The example is already running and it produces a plot, but it will need to
 be modified in order to complete fully the task (the comments in the
 example indicate where these modifications can be added). 
@@ -236,7 +236,7 @@ python skeleton.py
 ```
 
 You can copy the skeleton into a new file, modify it, and
-add it to this repository. 
+push it to the same repository. 
 
 #### Second task
 
