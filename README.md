@@ -1,5 +1,5 @@
 # First steps in the analysis
-Instructions for the first studies with the ntuples for the gluino RPV analysis. 
+Instructions for the first studies with the ntuples for the gluino RPV multijet analysis. 
 
 In this repo you can find 
 * Introduction about the signal model
