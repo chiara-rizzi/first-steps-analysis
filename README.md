@@ -238,9 +238,67 @@ python skeleton.py
 You can copy the skeleton into a new file, modify it, and
 push it to the same repository. 
 
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: how does the distribution of the number of tracks compare
+for quarks and gluons? Is this expected? 
+
 #### Second task
 
 Following the example of the first task, you should plot also the 
 distribution of the jet width and of the two-point energy correlation. 
+
+### Third task
+
+Reproduce the same plots as above, but requiring that the
+jets you select satisfy the definition of signal jets.
+This is stored in the variable `jet_isSig`, which takes
+the value 1 for signal jets and 0 for jets that fail the
+definition of signal jets. The definition of signal jet
+requires, on top of the definition of a baseline jet:
+* To pass the overlap removal
+* To pass the JVT selection
+* To have an absolute value of the pseudorapidity < 2.8
+
+In practice, you can do it by modifying the selection string.
+E.g. in the case of quark jets, from:
+```
+'((jet_PartonTruthLabelID<5)*(normweight*mcEventWeight))'
+```
+to:
+```
+'(((jet_PartonTruthLabelID<5)*(jet_isSig>0))*(normweight*mcEventWeight))'
+```
+
+![#1589F0](https://via.placeholder.com/15/c5f015/000000?text=+)
+**Question**: do you see any change in the distributions with respect
+using baseline jets?
+
+
+### Fourth task
+
+Reproduce the sampel plots as above, for signal jet, but divided into
+"pT slices". This means that you will have different groups of plots,
+each group selecting jets only in a certain pT range.
+This way you are sure that, when looking at each plot, you are comparing
+jets with similar energy.
+
+To start, you can use the following binning: 20-40 GeV, 40-60 GeV,
+60-100 GeV, 100-150 GeV, 150-200 GeV, 200-300 GeV, 300-500 GeV, >500 GeV.
+But please feel free to adapt it if while doing the exercise you realize it
+is not appropriate (e.g. you don't have enough statistics in one bin).
+
+This means that, for each pT range you want to consider, you will add to your selection
+the selection on the jet pT. E.g. for the first bin:
+
+```
+'(((jet_PartonTruthLabelID<5)*(jet_isSig>0)*(jet_pt>=20 && jet_pt<40))*(normweight*mcEventWeight))'
+```                                                     
+                                                        
+**Suggestion**: you might want to consider adapting your script to handle all of the
+pT ranges together in a `for` loop, so that you don't have to manually change
+the selection, the text for the plot and the name of the output file every time. 
+
+Please adapt the test on the plot to include which pT range you are considering.
+
 
 
