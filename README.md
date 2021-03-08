@@ -293,12 +293,20 @@ the selection on the jet pT. E.g. for the first bin:
 ```
 '(((jet_PartonTruthLabelID<5)*(jet_isSig>0)*(jet_pt>=20 && jet_pt<40))*(normweight*mcEventWeight))'
 ```                                                     
-                                                        
+                                                       
+Please add also some text on the plot to include which pT range you are considering
+(you can use TLatex for this, see e.g. [this tutorial](https://root.cern.ch/doc/master/zdemo_8py_source.html)).
+
 **Suggestion**: you might want to consider adapting your script to handle all of the
 pT ranges together in a `for` loop, so that you don't have to manually change
 the selection, the text for the plot and the name of the output file every time. 
 
-Please adapt the test on the plot to include which pT range you are considering.
+Note: if you want to remove the title of the histogram and the stat box from your plots, you can
+so so with:
+```
+ROOT.gStyle.SetOptStat(0)
+ROOT.gStyle.SetOptTitle(0)
+```
 
 
 
