@@ -247,7 +247,7 @@ for quarks and gluons? Is this expected?
 Following the example of the first task, you should plot also the 
 distribution of the jet width and of the two-point energy correlation. 
 
-### Third task
+#### Third task
 
 Reproduce the same plots as above, but requiring that the
 jets you select satisfy the definition of signal jets.
@@ -274,7 +274,7 @@ to:
 using baseline jets?
 
 
-### Fourth task
+#### Fourth task
 
 Reproduce the sampel plots as above, for signal jet, but divided into
 "pT slices". This means that you will have different groups of plots,
