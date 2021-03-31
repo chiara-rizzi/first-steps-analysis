@@ -1,3 +1,26 @@
-markdown: CommonMarkGhPages
-#theme: jekyll-theme-leap-day
-remote_theme: cookiepink/jekyll-theme-candypink
+email: candypink@outlook.it
+bloghomeurl: https://candypink.github.io/
+blogtitle: A CandyPink Blog
+description: >- 
+  A CandyPink blog is a space for me to share my learning path in data science
+  and write posts on basically anything I fancy.
+github_username:  candypink
+social_links:
+  github:  candypink
+
+# Build settings
+markdown: kramdown
+
+remote_theme: candypink/jekyll-theme-candypink
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+navigation:
+  - name: Blog
+    link: https://candypink.github.io/blog/index.html
+  - name: Portfolio
+    link: https://candypink.github.io/portfolio.html
+  - name: About
+    link: https://candypink.github.io/about.html
