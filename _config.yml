@@ -1,8 +1,2 @@
-# Build settings
 markdown: CommonMarkGhPages
-
-remote_theme: candypink/jekyll-theme-candypink
-
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+theme: jekyll-theme-leap-day
