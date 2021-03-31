@@ -1,2 +1,6 @@
 markdown: CommonMarkGhPages
-theme: jekyll-theme-leap-day
+remote_theme: candypink/jekyll-theme-candypink
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

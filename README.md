@@ -1,4 +1,9 @@
-# First steps in the analysis
+---
+layout: post
+title:  "First steps in the analysis"
+permalink: index.html
+---
+
 Instructions for the first studies with the ntuples for the gluino RPV multijet analysis. 
 
 In this repo you can find 
