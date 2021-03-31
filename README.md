@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "First steps in the analysis"
+date:   2019-08-18 12:11:22 +0200
 permalink: index.html
 ---
 
