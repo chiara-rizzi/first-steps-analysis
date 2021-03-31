@@ -1,5 +1,5 @@
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 
 remote_theme: candypink/jekyll-theme-candypink
 
